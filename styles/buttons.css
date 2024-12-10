@@ -1,0 +1,32 @@
+.btn {
+  --btn-bg-color: var(--pink-dark);
+  --btn-color: var(--text-title);
+
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: var(--btn-bg-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  padding: 0.75rem 1.25rem;
+  font: var(--fw-base) var(--fs-md) var(--ff-base);
+  color: var(--btn-color);
+
+  cursor: pointer;
+
+  &:hover {
+    --btn-bg-color: var(--pink-base);
+  }
+}
+
+.btn.secondary {
+  --btn-bg-color: var(--blue-dark);
+
+  &:hover {
+    --btn-bg-color: var(--blue-mid);
+  }
+}

@@ -1,0 +1,30 @@
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--px-base) * 2);
+  margin-inline: auto;
+  border: 1px solid rgb(255, 0, 230);
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+@media (width >= 90em) {
+  .container {
+    --max-width: 90rem;
+  }
+
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
